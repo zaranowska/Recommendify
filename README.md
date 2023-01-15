@@ -20,15 +20,19 @@ Utwór dostępny jest na licencji [Creative Commons Uznanie autorstwa-Użycie ni
 
 ### Specyfikacja wymagań
 
-to do 
+1. Skrypt łączący z API - pozwala na dostęp danych użytkownika | Priorytet 1| Backend.
+2. Skrypt przygotowujący dane - ekstrakcja i obróbka danych pod model uczenia maszynowego | Priorytet 1 | Backend.
+3. 
+4. 
+5. 
 
 
 
 ## Architektura technologiczna
 
 - Python (3.9.7)
-- html
-- json
+- html (5.0)
+- json 
 
 - GitHub
 
