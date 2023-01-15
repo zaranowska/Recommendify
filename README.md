@@ -180,7 +180,16 @@ Wybrany został model...
 
 ### 3. Aplikacja lokalnie 
 
+![Otwarcie aplikacji](https://github.com/zaranowska/IO/tree/main/Images/i1.png)
+
+![Udostępnienie informacji aplikacji przez użytkownika](https://github.com/zaranowska/IO/tree/main/Images/i2.png)
+
+![Otrzymana playlista](/images/i3.png)
+
 ### 4. Aplikacja globalnie
+
+![Error](/images/i4.png)
+
 
 ## Ograniczenia aplikacji oraz jej dalszy rozwój 
 
