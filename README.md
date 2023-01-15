@@ -160,9 +160,16 @@ Pozyskanie listy rekomendowanych ścieżek muzycznych następuję analogicznie d
 
 ### 2. Modele klasyfikacji
 
-Użyty został algorytm Drzew Losowych (Random Forest).
+Użyty został algorytm Drzew Losowych (Random Forest) znajdujący się w pliku [modele.py](https://github.com/zaranowska/IO/blob/main/projekt0.2/modele.py). 
 
 Zbiór danych zawierał 2071 prób, został on podzielony na zbiór treningowy i testowy w proporcjach 80:20.
+
+Poniżej przedstawiono podstawowe miary dokładności dopasowania modelu. Jak widać wybrany model prezentuje się dość dobrze:
+
+|               | Precyzja | Czułość | F1- Score |
+| ------------- | ------------- | ------------- | ------------- |
+|  0  | 0.9 | 0.86 | 0.88 |
+|  1  | 0.93 | 0.95 | 0.94 |
 
 
 ###### Zmienne: 
@@ -184,17 +191,9 @@ Zbiór danych zawierał 2071 prób, został on podzielony na zbiór treningowy i
 - duration_ms - czas trwania ścieżki w milisekundach.
 - time_signature - metrum, rytm utworu. Schemat określający układ akcentów w obrębie taktu oraz sposób zapisu wartości rytmicznych.
 
-```ruby
-
-```
-
-
 
 ### 3. Aplikacja lokalnie 
-Uruchomienie aplikacji lokalnie następuje poprzez skrypt: 
-```ruby
-
-```
+Uruchomienie aplikacji lokalnie następuje poprzez skrypt []() : 
 
 Przekierowuje nas on do następującej strony: 
 ![Otwarcie aplikacji](Images/i1.png)
@@ -213,7 +212,10 @@ Po wyrażeniu zgody, strona przekieruje nas bezpośrednio do aplikacji Spotify, 
 
 Jednym z ograniczeń aplikacji jest powolny proces pobierania danych ze Spotify Web API.  W kolejnych etapach można byłoby rozważyć ulepszenie rozwiązań, które pozwoliłyby na lepsze oraz szybsze funkcjonowanie aplikacji.
 
-Aktualnie działanie aplikacji pozwala na stworzenie pojedynczej playlisty z rekomendacjami na podstawie ostatnich wyborów muzycznych. W przyszłości można poszerzyć pomysł o dodatkowe funkcje takie jak możliwość wyboru kilku playlist pod kątem bieżącego nastroju.
+Kolejnym krokiem byłoby dopisanie kodu tak, by aplikacja mogła działać globalnie i być dostępna dla większej ilości użytkowników. Wersji rozwojowa daje możliwość udostępnienia jej maksymalnie dla 25 kont, więc niezbędne byłoby wnioskowanie do Spotify o zwiększenie puli osób, które mogą korzystać z aplikacji.
+
+Aktualnie działanie aplikacji pozwala na stworzenie pojedynczej playlisty z rekomendacjami na podstawie ostatnich wyborów muzycznych. W przyszłości można poszerzyć pomysł o dodatkowe funkcje takie jak możliwość wyboru kilku playlist pod kątem bieżącego nastroju. 
+
 
 
 
