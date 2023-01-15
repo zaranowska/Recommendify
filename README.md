@@ -193,7 +193,7 @@ Poniżej przedstawiono podstawowe miary dokładności dopasowania modelu. Jak wi
 
 
 ### 3. Aplikacja lokalnie 
-Uruchomienie aplikacji lokalnie następuje poprzez skrypt []() : 
+Uruchomienie aplikacji lokalnie następuje poprzez skrypt zawarty w pliku [main.py](https://github.com/zaranowska/IO/blob/main/projekt0.2/main.py). Użyty został framework Flask, który wykorzystał pliki [.html](https://github.com/zaranowska/IO/tree/main/projekt0.2/templates) oraz plik [JavaScript](https://github.com/zaranowska/IO/tree/main/projekt0.2/templates) do zaprezentowania graficznego interfejsu użytkownika. 
 
 Przekierowuje nas on do następującej strony: 
 ![Otwarcie aplikacji](Images/i1.png)
@@ -203,9 +203,8 @@ Po uzyskaniu dostępu należy kliknąć “Zaczynamy”, który przekieruje nas 
 ![Udostępnienie informacji aplikacji przez użytkownika](Images/i2.PNG)
 
 Po wyrażeniu zgody, strona przekieruje nas bezpośrednio do aplikacji Spotify, w której będzie czekała gotowa playlista z rekomendacjami utworów:
-![Otrzymana playlista](Images/i3.png)
 
-### 4. Aplikacja globalnie
+![Otrzymana playlista](Images/i3.png)
 
 
 ## Ograniczenia aplikacji oraz jej dalszy rozwój 
