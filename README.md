@@ -81,7 +81,7 @@ W części testów znajduję się wykorzystanie Spotify Web API.
 
 ### 1. Pobieranie danych ze Spotify API
 
-Plik data_functions.py zawiera wszystkie potrzebne funkcje do pobrania potrzebnych danych: 
+Plik functions.py zawiera wszystkie potrzebne funkcje do pobrania potrzebnych danych: 
 - offset_api_limit
 - get_artists_df
 - get_tracks_df
