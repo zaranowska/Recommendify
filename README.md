@@ -188,8 +188,6 @@ Wybrany został model...
 
 ### 4. Aplikacja globalnie
 
-![Error](Images/i4.png)
-
 
 ## Ograniczenia aplikacji oraz jej dalszy rozwój 
 
