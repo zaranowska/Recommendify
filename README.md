@@ -191,11 +191,19 @@ Zbiór danych zawierał 2071 prób, został on podzielony na zbiór treningowy i
 
 
 ### 3. Aplikacja lokalnie 
+Uruchomienie aplikacji lokalnie następuje poprzez skrypt: 
+```ruby
 
+```
+
+Przekierowuje nas on do następującej strony: 
 ![Otwarcie aplikacji](Images/i1.png)
+
+Po uzyskaniu dostępu należy kliknąć “Zaczynamy”, który przekieruje nas do witryny, w której musimy potwierdzić zgode na udostępnienie danych dotyczących konta użytkownika aplikacji Spotify:
 
 ![Udostępnienie informacji aplikacji przez użytkownika](Images/i2.PNG)
 
+Po wyrażeniu zgody, strona przekieruje nas bezpośrednio do aplikacji Spotify, w której będzie czekała gotowa playlista z rekomendacjami utworów:
 ![Otrzymana playlista](Images/i3.png)
 
 ### 4. Aplikacja globalnie
