@@ -6,9 +6,9 @@ from data_functions import offset_api_limit, get_artists_df, get_tracks_df, get_
 
 
 
-client_id = "CLIENT_ID"
-client_secret = "CLIENT_SECRET"
-redirect_uri = "REDIRECT_URI"
+client_id = "a811ca65f86749e385a0426469546013"
+client_secret = "499683208dac4b1487cfbc47bf90cbc3"
+redirect_uri = "http://localhost:8888/callback"
 
 
 scope = "user-library-read user-follow-read user-top-read playlist-read-private"
@@ -23,21 +23,18 @@ def authenticate_spotify(client_id, client_secret, redirect_uri, scope):
 
 
 def top_artists(sp):
-    print("Getting, transforming, and saving top artist data...")
     top_artists = offset_api_limit(sp, sp.current_user_top_artists())
     top_artists_df = get_artists_df(top_artists)
     top_artists_df.to_pickle("top_artists.pkl")
     return top_artists_df
 
 def followed_artists(sp):
-    print("Getting, transforming, and saving followed artist data...")
     followed_artists = offset_api_limit(sp, sp.current_user_followed_artists())
     followed_artists_df = get_artists_df(followed_artists)
     followed_artists_df.to_pickle("followed_artists.pkl")
     return followed_artists_df
 
 def top_tracks(sp):
-    print("Getting, transforming, and saving top track data...")
     top_tracks = offset_api_limit(sp, sp.current_user_top_tracks())
     top_tracks_df = get_tracks_df(top_tracks)
     top_tracks_df = get_track_audio_df(sp, top_tracks_df)
@@ -45,7 +42,6 @@ def top_tracks(sp):
     return top_tracks_df
 
 def saved_tracks(sp):
-    print("Getting, transforming, and saving saved track data...")
     saved_tracks = offset_api_limit(sp, sp.current_user_saved_tracks())
     saved_tracks_df = get_tracks_df(saved_tracks)
     saved_tracks_df = get_track_audio_df(sp, saved_tracks_df)
@@ -53,7 +49,6 @@ def saved_tracks(sp):
     return saved_tracks_df
 
 def playlist_tracks(sp):
-    print("Getting, transforming, and saving playlist track data...")
     playlist_tracks_df = get_all_playlist_tracks_df(sp, sp.current_user_playlists())  # limit of 50 playlists by default
     playlist_tracks_df = get_track_audio_df(sp, playlist_tracks_df)
     playlist_tracks_df.to_pickle("playlist_tracks.pkl")
@@ -66,7 +61,6 @@ def playlist_yaml_dump(playlist_tracks_df):
         yaml.dump(playlist_dict, outfile, default_flow_style=False)
 
 def recommendation_tracks(sp, playlist_tracks_df):
-    print("Getting, transforming, and saving tracks recommendations...")
  
     recommendation_tracks = get_recommendations(sp, playlist_tracks_df[playlist_tracks_df['playlist_name'].isin(
      ["Your Top Songs 2022", 'Chill', 'Top Metal', 'Top Pop', 'Dark&Gothic']
