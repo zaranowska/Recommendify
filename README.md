@@ -20,10 +20,10 @@ Utwór dostępny jest na licencji [Creative Commons Uznanie autorstwa-Użycie ni
 
 ### Specyfikacja wymagań
 
-1. Skrypt łączący z API - pozwala na dostęp danych użytkownika | Priorytet 1| Backend.
+1. Skrypt łączący z API - pozwala na dostęp danych użytkownika | Priorytet 1 | Backend.
 2. Skrypt przygotowujący dane - ekstrakcja i obróbka danych pod model uczenia maszynowego | Priorytet 1 | Backend.
-3. 
-4. 
+3. Model uczenia maszynowego - klasyfikuje utwory muzyczne, które mogą spodobać się użytkownikowi | Priorytet 1 | Backend.
+4. Aplikacja Flask - pozwala na pokazanie użytkownikowi, że playlista jest w trakcie tworzenia. | Priorytet 2 | Frontend.
 5. 
 
 
@@ -128,6 +128,7 @@ top_tracks_df.to_pickle("top_tracks.pkl")
 ```
 
 - Polubione utwory
+
 ```ruby
 saved_tracks = offset_api_limit(sp, sp.current_user_saved_tracks())
 saved_tracks_df = get_tracks_df(saved_tracks)
@@ -160,7 +161,7 @@ Pozyskanie listy rekomendowanych ścieżek muzycznych następuję analogicznie d
 
 ### 2. Modele klasyfikacji
 
-Dane: 
+Zmienne: 
 - artist_name – wykonawca
 - track_name – tytuł utworu
 - track_id  - ID utworu
