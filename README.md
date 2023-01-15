@@ -20,11 +20,10 @@ Utwór dostępny jest na licencji [Creative Commons Uznanie autorstwa-Użycie ni
 
 ### Specyfikacja wymagań
 
-1. Skrypt łączący z API - pozwala na dostęp danych użytkownika | Priorytet 1 | Backend.
-2. Skrypt przygotowujący dane - ekstrakcja i obróbka danych pod model uczenia maszynowego | Priorytet 1 | Backend.
-3. Model uczenia maszynowego - klasyfikuje utwory muzyczne, które mogą spodobać się użytkownikowi | Priorytet 1 | Backend.
-4. Aplikacja Flask - pozwala na pokazanie użytkownikowi, że playlista jest w trakcie tworzenia. | Priorytet 2 | Frontend.
-5. 
+1. Skrypt łączący z API - pozwala na dostęp danych użytkownika [ Priorytet 1 ][ Backend ]
+2. Skrypt przygotowujący dane - ekstrakcja i obróbka danych pod model uczenia maszynowego [ Priorytet 1 ][ Backend ]
+3. Model uczenia maszynowego - klasyfikuje utwory muzyczne, które mogą spodobać się użytkownikowi [ Priorytet 1 ][ Backend ]
+4. Aplikacja Flask - pozwala na pokazanie użytkownikowi, że playlista jest w trakcie tworzenia. [ Priorytet 2 ][ Frontend ]
 
 
 
@@ -161,7 +160,12 @@ Pozyskanie listy rekomendowanych ścieżek muzycznych następuję analogicznie d
 
 ### 2. Modele klasyfikacji
 
-Zmienne: 
+Użyty został algorytm Drzew Losowych (Random Forest).
+
+Zbiór danych zawierał 2071 prób, został on podzielony na zbiór treningowy i testowy w proporcjach 80:20.
+
+
+###### Zmienne: 
 - artist_name – wykonawca
 - track_name – tytuł utworu
 - track_id  - ID utworu
@@ -184,7 +188,7 @@ Zmienne:
 
 ```
 
-Wybrany został model...
+
 
 ### 3. Aplikacja lokalnie 
 
