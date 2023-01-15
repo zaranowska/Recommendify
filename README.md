@@ -30,20 +30,23 @@ Utwór dostępny jest na licencji [Creative Commons Uznanie autorstwa-Użycie ni
 
 ## Architektura technologiczna
 
-- Python (3.9.7)
-- html (5.0)
-- json 
+- Python
+- html
+- JavaScript 
 
 - GitHub
 
  Biblioteki: 
-- spotipy (2.22.0)
-- yaml (0.2.5)
-- pandas (1.3.5)
-- numpy (1.20.3)
-- matplotlib (3.5.0)
-- scikit-learn (1.0.1)
-- Flask (1.1.2)
+- spotipy
+- yaml
+- pandas
+- numpy
+- matplotlib
+- scikit-learn
+- Flask
+
+Informacje zastosowanych wersjach znajdują się w pliku requirements.txt. 
+
 
 ## Spotify Web API
 
