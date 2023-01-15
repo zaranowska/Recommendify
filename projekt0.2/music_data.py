@@ -6,9 +6,9 @@ from data_functions import offset_api_limit, get_artists_df, get_tracks_df, get_
 
 
 
-client_id = "a811ca65f86749e385a0426469546013"
-client_secret = "499683208dac4b1487cfbc47bf90cbc3"
-redirect_uri = "http://localhost:8888/callback"
+client_id = "CLIENT_ID"
+client_secret = "CLIENT_SECRET"
+redirect_uri = "REDIRECT_URI"
 
 
 scope = "user-library-read user-follow-read user-top-read playlist-read-private"
