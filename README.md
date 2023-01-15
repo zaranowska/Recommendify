@@ -3,6 +3,8 @@
 Dokumentacja techniczna opisuje aplikację internetową napisaną w języku programowania Python. Jej zadaniem jest stworzenie playlisty z rekomendowanymi utworami odpowiadającymi ostatnim muzycznym preferencjom użytkownika.
 Aplikacja korzysta z API Spotify, w celu skolekcjonowania z konta użytkownika listy ostatnich oraz najczęstszych wyborów muzycznych. Na podstawie tych utworów uczony jest model, który w końcowej fazie pomaga w rekomendacji ścieżek muzycznych o podobnych zależnościach.
 
+ 
+
 ## Prawa autorskie:
 
 ### Autorzy
