@@ -44,7 +44,7 @@ Utwór dostępny jest na licencji [Creative Commons Uznanie autorstwa-Użycie ni
 - scikit-learn
 - Flask
 
-Informacje zastosowanych wersjach znajdują się w pliku requirements.txt. 
+Informacje zastosowanych wersjach znajdują się w pliku [requirements.txt](https://github.com/zaranowska/IO/blob/main/requirements.txt). 
 
 
 ## Spotify Web API
